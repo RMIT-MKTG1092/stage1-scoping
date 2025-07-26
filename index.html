@@ -5,42 +5,36 @@
 <title>Stage-1 Scoping Worksheet – LaundryMax</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <style>
- body{font-family:Arial,Helvetica,sans-serif;line-height:1.5;margin:40px auto;max-width:960px;color:#222;}
- h1{color:#ba372a;font-size:1.9rem;margin-bottom:.45em;}
- h2{color:#ba372a;font-size:1.35rem;margin-top:2.1em;margin-bottom:.55em;}
- h3{color:#000054;font-size:1.05rem;margin-top:1.6em;margin-bottom:.45em;}
-
- table{border-collapse:collapse;width:100%;margin:12px 0;font-size:.93rem;}
- th,td{border:1px solid #ccc;padding:6px 8px;vertical-align:top;}
- th{background:#f0f0f0;}
-
- textarea,input[type=text],input[type=number]{
+body{font-family:Arial,Helvetica,sans-serif;line-height:1.5;margin:40px auto;max-width:960px;color:#222;}
+h1{color:#ba372a;font-size:1.9rem;margin-bottom:.45em;}
+h2{color:#ba372a;font-size:1.35rem;margin-top:2.1em;margin-bottom:.55em;}
+h3{color:#000054;font-size:1.05rem;margin-top:1.6em;margin-bottom:.45em;}
+table{border-collapse:collapse;width:100%;margin:12px 0;font-size:.93rem;}
+th,td{border:1px solid #bcbcbc;padding:8px;vertical-align:top;}
+th{background:#f0f0f0;}
+textarea,input[type=text],input[type=number]{
   width:100%;padding:6px;border:1px solid #bbb;border-radius:4px;
   font-family:inherit;font-size:.92rem;box-sizing:border-box;}
- textarea{min-height:64px;}
- input[type=number]{-moz-appearance:textfield;}
- input[type=number]::-webkit-inner-spin-button,
- input[type=number]::-webkit-outer-spin-button{margin:0;-webkit-appearance:none;}
-
- ::placeholder{color:#888;}
- .smallnote{font-size:.83rem;color:#666;}
- .scan-box{width:100%;min-height:64px;padding:6px;border:1px solid #bbb;border-radius:4px;font-size:.92rem;}
- .scan-score{width:55px;text-align:center;padding:4px;border:1px solid #bbb;border-radius:4px;}
- .force-score{width:65px;text-align:center;background:#f8f8f8;font-weight:600;}
- .export-btn{display:inline-block;background:#ba372a;color:#fff;border:none;padding:10px 22px;border-radius:4px;font-size:1rem;cursor:pointer;margin-top:22px;}
- .export-btn:hover{background:#a12e1f;}
+textarea{min-height:64px;}
+input[type=number]{-moz-appearance:textfield;}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button{margin:0;-webkit-appearance:none;}
+::placeholder{color:#888;}
+.smallnote{font-size:.83rem;color:#666;}
+.scan-box{width:100%;min-height:64px;padding:6px;border:1px solid #bbb;border-radius:4px;font-size:.92rem;}
+.scan-score{width:55px;text-align:center;padding:4px;border:1px solid #bbb;border-radius:4px;}
+.force-score{width:65px;text-align:center;background:#f8f8f8;font-weight:600;}
+.export-btn{display:inline-block;background:#ba372a;color:#fff;border:none;padding:10px 22px;border-radius:4px;font-size:1rem;cursor:pointer;margin-top:22px;}
+.export-btn:hover{background:#a12e1f;}
 </style>
 </head>
-
 <body>
 <div id="worksheet">
-
 <h1>Stage-Gate® Stage 1 Worksheet – LaundryMax Co.</h1>
-<p><strong>How to use.</strong> Fill each section (grey placeholders guide you). When finished, click
-<strong>“Export to Word”</strong> or use Print → PDF.</p>
+<p><strong>How to use.</strong> Fill each section (grey placeholders guide you). When finished, click <strong>“Export to Word”</strong> or use Print → PDF.</p>
 <hr>
 
-<!-- 1 ───────────── CONCEPT SNAPSHOT -->
+<!-- 1. Concept Snapshot -->
 <h2>Concept Snapshot</h2>
 <table>
  <thead><tr><th style="width:26%">Box</th><th>Prompt / Content</th></tr></thead>
@@ -53,29 +47,33 @@
  </tbody>
 </table>
 
-<!-- 2 ───────────── EXTERNAL SCAN -->
+<!-- 2. External Scan -->
 <h2>External Scan</h2>
 <p class="smallnote">Paste only the highest-impact PESTLE signals from Week 1 (no need to re-type the full scanner).</p>
-
 <h3>PESTLE (headlines only)</h3>
 <table>
  <thead><tr><th>P</th><th>E</th><th>S</th><th>T</th><th>L</th><th>E</th></tr></thead>
  <tbody>
-  <tr><td><textarea class="scan-box" placeholder="Political signal"></textarea></td>
-      <td><textarea class="scan-box" placeholder="Economic signal"></textarea></td>
-      <td><textarea class="scan-box" placeholder="Social signal"></textarea></td>
-      <td><textarea class="scan-box" placeholder="Technological signal"></textarea></td>
-      <td><textarea class="scan-box" placeholder="Legal signal"></textarea></td>
-      <td><textarea class="scan-box" placeholder="Environmental signal"></textarea></td></tr>
-  <tr><td><textarea class="scan-box"></textarea></td><td><textarea class="scan-box"></textarea></td>
-      <td><textarea class="scan-box"></textarea></td><td><textarea class="scan-box"></textarea></td>
-      <td><textarea class="scan-box"></textarea></td><td><textarea class="scan-box"></textarea></td></tr>
-  <tr><td><textarea class="scan-box"></textarea></td><td><textarea class="scan-box"></textarea></td>
-      <td><textarea class="scan-box"></textarea></td><td><textarea class="scan-box"></textarea></td>
-      <td><textarea class="scan-box"></textarea></td><td><textarea class="scan-box"></textarea></td></tr>
+  <tr>
+    <td><textarea class="scan-box" placeholder="Political signal"></textarea></td>
+    <td><textarea class="scan-box" placeholder="Economic signal"></textarea></td>
+    <td><textarea class="scan-box" placeholder="Social signal"></textarea></td>
+    <td><textarea class="scan-box" placeholder="Technological signal"></textarea></td>
+    <td><textarea class="scan-box" placeholder="Legal signal"></textarea></td>
+    <td><textarea class="scan-box" placeholder="Environmental signal"></textarea></td>
+  </tr>
+  <tr>
+    <td><textarea class="scan-box"></textarea></td><td><textarea class="scan-box"></textarea></td>
+    <td><textarea class="scan-box"></textarea></td><td><textarea class="scan-box"></textarea></td>
+    <td><textarea class="scan-box"></textarea></td><td><textarea class="scan-box"></textarea></td>
+  </tr>
+  <tr>
+    <td><textarea class="scan-box"></textarea></td><td><textarea class="scan-box"></textarea></td>
+    <td><textarea class="scan-box"></textarea></td><td><textarea class="scan-box"></textarea></td>
+    <td><textarea class="scan-box"></textarea></td><td><textarea class="scan-box"></textarea></td>
+  </tr>
  </tbody>
 </table>
-
 <h3>Porter Five Forces – variable scoring (1 = weak, 5 = strong)</h3>
 <table>
  <thead><tr>
@@ -93,7 +91,6 @@
  <tr><td><input type="text" placeholder="e.g. Brand loyalty"></td>
      <td><input type="number" min="1" max="5" class="var-score" data-force="new"></td>
      <td><textarea class="scan-box"></textarea></td></tr>
-
  <!-- Supplier Power -->
  <tr><td rowspan="3"><strong>Supplier Power</strong><br>Average = <input id="force_sup" class="force-score" readonly></td>
      <td><input type="text" placeholder="e.g. Supplier concentration"></td>
@@ -105,7 +102,6 @@
  <tr><td><input type="text" placeholder="e.g. Input scarcity"></td>
      <td><input type="number" min="1" max="5" class="var-score" data-force="sup"></td>
      <td><textarea class="scan-box"></textarea></td></tr>
-
  <!-- Buyer Power -->
  <tr><td rowspan="3"><strong>Buyer Power</strong><br>Average = <input id="force_buy" class="force-score" readonly></td>
      <td><input type="text" placeholder="e.g. Price sensitivity"></td>
@@ -117,7 +113,6 @@
  <tr><td><input type="text" placeholder="e.g. Purchase volume"></td>
      <td><input type="number" min="1" max="5" class="var-score" data-force="buy"></td>
      <td><textarea class="scan-box"></textarea></td></tr>
-
  <!-- Threat of Substitutes -->
  <tr><td rowspan="3"><strong>Threat of Substitutes</strong><br>Average = <input id="force_sub" class="force-score" readonly></td>
      <td><input type="text" placeholder="e.g. Price-performance of substitute"></td>
@@ -129,7 +124,6 @@
  <tr><td><input type="text" placeholder="e.g. Availability of substitute"></td>
      <td><input type="number" min="1" max="5" class="var-score" data-force="sub"></td>
      <td><textarea class="scan-box"></textarea></td></tr>
-
  <!-- Competitive Rivalry -->
  <tr><td rowspan="3"><strong>Competitive Rivalry</strong><br>Average = <input id="force_riv" class="force-score" readonly></td>
      <td><input type="text" placeholder="e.g. Count of competitors"></td>
@@ -144,22 +138,18 @@
  </tbody>
 </table>
 
-<!-- 3 ───────────── ROUGH-CUT NUMBERS -->
+<!-- 3. Rough-Cut Numbers -->
 <h2>Rough-Cut Numbers</h2>
 <p class="smallnote">Use sources such as <strong>Euromonitor Passport</strong> or IBISWorld and cite them below.</p>
-
 <table>
 <thead><tr><th style="width:36%">Metric (definition & cue)</th><th style="width:24%">Figure</th><th>Source / Justification</th></tr></thead>
 <tbody>
- <!-- TAM -->
  <tr><td><strong>TAM – Total Addressable Market</strong><br>
      <em>“Size of the entire market if we owned 100 % share.”</em><br>
      Units: annual $ revenue OR total units / year.<br>
      Formula: customers × average spend.</td>
      <td><input id="tamValue" type="text" placeholder="$ 2,000,000,000"></td>
      <td><textarea class="scan-box" placeholder="Euromonitor Laundry Care AU$ 2024"></textarea></td></tr>
-
- <!-- SAM -->
  <tr><td><strong>SAM – Serviceable Addressable Market</strong><br>
      <em>“Portion our model can actually serve.”</em><br>
      Units: $ revenue or units / year in-scope.<br>
@@ -167,8 +157,6 @@
      <td><input id="samPercent" class="scan-score" type="number" placeholder="15"> %<br>
          <input id="samValue" type="text" placeholder="Auto" readonly></td>
      <td><textarea class="scan-box" placeholder="Metro households × spend"></textarea></td></tr>
-
- <!-- SOM -->
  <tr><td><strong>SOM – Serviceable Obtainable Market</strong><br>
      <em>“Realistic share we can capture in 3 years.”</em><br>
      Units: $ revenue or units / year we will win.<br>
@@ -176,44 +164,30 @@
      <td><input id="somPercent" class="scan-score" type="number" placeholder="3"> %<br>
          <input id="somValue" type="text" placeholder="Auto" readonly></td>
      <td><textarea class="scan-box" placeholder="Benchmark competitor share"></textarea></td></tr>
-
- <!-- CAC -->
  <tr><td><strong>CAC – Customer Acquisition Cost</strong><br>
      <em>“Cost to acquire one paying customer.”</em></td>
      <td><input id="cacValue" type="text" placeholder="$ 40"></td>
      <td><textarea class="scan-box" placeholder="Ad budget ÷ new customers"></textarea></td></tr>
-
- <!-- CLV -->
  <tr><td><strong>CLV – Customer Lifetime Value (gross margin)</strong><br>
      <em>“Gross profit per customer over lifetime.”</em></td>
      <td><input id="clvValue" type="text" placeholder="$ 280"></td>
      <td><textarea class="scan-box" placeholder="(Rev – cost) × lifetime – CAC"></textarea></td></tr>
-
- <!-- Probability -->
  <tr><td><strong>Probability of Success (%)</strong><br>
      <em>“Technical + commercial likelihood of meeting targets.”</em></td>
      <td><input id="probSuccess" class="scan-score" type="number" placeholder="60"> %</td>
      <td><textarea class="scan-box" placeholder="TRL 7, low reg-hurdle, proven demand"></textarea></td></tr>
-
- <!-- NPV -->
  <tr><td><strong>Expected NPV (Financial Return)</strong><br>
      <em>“Present value of project cash flows.”</em></td>
      <td><input id="npvValue" type="text" placeholder="$ 1,500,000"></td>
      <td><textarea class="scan-box" placeholder="5-yr forecast @ 10 % discount"></textarea></td></tr>
-
- <!-- Bubble size -->
  <tr><td><strong>Bubble Size (Development Cost)</strong><br>
      <em>“Total incremental investment to launch.”</em></td>
      <td><input id="devCost" type="text" placeholder="$ 750,000"></td>
      <td><textarea class="scan-box" placeholder="R&D $300k + pilot $450k"></textarea></td></tr>
-
- <!-- Strategic fit -->
  <tr><td><strong>Strategic Fit Score (1–5)</strong><br>
      <em>“Alignment with corporate strategy.”</em></td>
      <td><input id="fitScore" class="scan-score" type="number" min="1" max="5" placeholder="4"></td>
      <td><textarea class="scan-box" placeholder="Matches Core bucket; leverages brand"></textarea></td></tr>
-
- <!-- Disruption -->
  <tr><td><strong>Market Disruption Potential (1–5)</strong><br>
      <em>“Ability to create or reshape a market.”</em></td>
      <td><input id="disruptScore" class="scan-score" type="number" min="1" max="5" placeholder="5"></td>
@@ -221,9 +195,8 @@
 </tbody>
 </table>
 
-<!-- 4 ───────────── GATE DECISION -->
+<!-- 4. Gate Decision -->
 <h2>Gate Decision</h2>
-
 <h3>Should-meet scorecard</h3>
 <table>
  <thead><tr>
@@ -259,55 +232,93 @@
   </tr>
  </tbody>
 </table>
-
 <p style="max-width:320px;"><label><strong>Average “should-meet” score</strong>
 <input id="avgScore" type="number" step="0.1" min="1" max="5" class="scan-score" style="width:90px;" readonly></label></p>
 
-<h3 class="tcentre">Verdict</h3>
+<h3 style="color:#000054;font-size:16px;">Verdict</h3>
 <table style="width:70%;margin:auto;">
  <tbody>
-  <tr><td><label><input type="checkbox"> <span style="color:#027634;font-weight:600;">Go</span> — evidence is compelling</label></td></tr>
-  <tr><td><label><input type="checkbox"> Hold — needs more data</label></td></tr>
-  <tr><td><label><input type="checkbox"> <span style="color:#c0392b;font-weight:600;">Kill</span> — fails must-meet</label></td></tr>
+  <tr>
+    <td>
+      <label><input type="checkbox" id="goVerdict">
+        <span style="color:#027634;font-weight:600;">Go</span> — evidence is compelling
+      </label>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <label><input type="checkbox" id="holdVerdict">
+        Hold — needs more data
+      </label>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <label><input type="checkbox" id="killVerdict">
+        <span style="color:#c0392b;font-weight:600;">Kill</span> — fails must-meet
+      </label>
+    </td>
+  </tr>
  </tbody>
 </table>
-
 <p><textarea placeholder="Explain your decision (up to 200 words)." style="min-height:120px;"></textarea></p>
 <p class="smallnote tcentre">Remember to Export or Print before closing.</p>
-
 <button class="export-btn" id="exportWord">Export to Word</button>
 </div><!-- /worksheet -->
 
 <script>
+/* ── comma-format helper ── */
+function fmtComma(el){
+ const raw=el.value.replace(/[^0-9.]/g,'');
+ if(!raw){el.value='';return;}
+ const p=raw.split('.');p[0]=p[0].replace(/\B(?=(\d{3})+(?!\d))/g,',');
+ el.value=(el.value.trim().charAt(0)==='$'?'$ ':'')+p.join('.');
+}
+['tamValue','samValue','somValue','cacValue','clvValue','npvValue','devCost']
+ .forEach(id=>{const e=document.getElementById(id); if(e){e.addEventListener('blur',e=>fmtComma(e.target));}});
+
+/* ── SAM & SOM auto-calc ── */
+function calcSAM(){const t=+tamValue.value.replace(/[^0-9.]/g,'')||0;
+ const p=+samPercent.value||0;
+ samValue.value=t&&p? (t*p/100).toLocaleString():'';}
+function calcSOM(){const s=+samValue.value.replace(/[^0-9.]/g,'')||0;
+ const p=+somPercent.value||0;
+ somValue.value=s&&p? (s*p/100).toLocaleString():'';}
+if(window.tamValue){
+ tamValue.addEventListener('blur',calcSAM);samPercent.addEventListener('input',calcSAM);
+ samPercent.addEventListener('blur',calcSOM);somPercent.addEventListener('input',calcSOM);
+}
+
+/* ── Five-Forces averages ── */
+const map={new:'force_new',sup:'force_sup',buy:'force_buy',sub:'force_sub',riv:'force_riv'};
+function updForces(){
+ Object.keys(map).forEach(k=>{
+  const vals=[...document.querySelectorAll(`input.var-score[data-force=${k}]`)]
+             .map(i=>+i.value||0).filter(v=>v);
+  document.getElementById(map[k]).value=vals.length?(vals.reduce((a,b)=>a+b)/vals.length).toFixed(2):'';
+ });
+}
+document.querySelectorAll('input.var-score').forEach(i=>i.addEventListener('input',updForces));
+
+/* ── auto-average should-meet ── */
+function avgSM(){
+ const vals=[...document.querySelectorAll('.sm-score')].map(i=>+i.value||0).filter(v=>v);
+ avgScore.value=vals.length?(vals.reduce((a,b)=>a+b)/vals.length).toFixed(2):'';
+}
+document.querySelectorAll('.sm-score').forEach(i=>i.addEventListener('input',avgSM));
+
+/* ── Word export ── */
 document.getElementById('exportWord').addEventListener('click', function() {
-  // Clone content and post-process to inject all inline styles needed for Word
   const src = document.getElementById('worksheet').cloneNode(true);
 
- // Replace verdict checkboxes with ticked/unticked boxes
-['goVerdict','holdVerdict','killVerdict'].forEach(id=>{
-  const cb = src.querySelector(`#${id}`);
-  if(cb) {
-    const label = cb.parentNode;
-    const checked = cb.checked;
-    // Remove the checkbox and insert ☑ or ☐
-    const tick = document.createElement('span');
-    tick.textContent = checked ? '☑' : '☐';
-    tick.style.fontSize = "15px";
-    label.insertBefore(tick, cb);
-    label.removeChild(cb);
-  }
-});
-
-
-  // Apply heading styles
+  // Apply heading styles for export
   src.querySelectorAll('h1').forEach(h => {h.style.color='#ba372a';h.style.fontSize='22px';});
-  src.querySelectorAll('h2').forEach(h => {h.style.color='#ba372a';h.style.fontSize='18px';marginTop='22px';});
-  src.querySelectorAll('h3').forEach(h => {h.style.color='#000054';h.style.fontSize='15px';marginTop='14px';});
+  src.querySelectorAll('h2').forEach(h => {h.style.color='#ba372a';h.style.fontSize='18px';});
+  src.querySelectorAll('h3').forEach(h => {h.style.color='#000054';h.style.fontSize='15px';});
 
-  // Style all tables & cells for fine border/padding
+  // Table styling
   src.querySelectorAll('table').forEach(tb=>{
-    tb.style.borderCollapse='collapse';tb.style.width='100%';
-    tb.style.margin='14px 0';
+    tb.style.borderCollapse='collapse';tb.style.width='100%';tb.style.margin='14px 0';
     tb.querySelectorAll('th,td').forEach(cell=>{
       cell.style.border='1px solid #bcbcbc';
       cell.style.padding='8px';
@@ -317,11 +328,10 @@ document.getElementById('exportWord').addEventListener('click', function() {
     tb.querySelectorAll('th').forEach(cell=>{cell.style.background='#f0f0f0';cell.style.fontWeight='bold';});
   });
 
-  // Style labels, smallnote, and placeholders (since placeholder attr is not visible in Word)
+  // Smallnotes and placeholders
   src.querySelectorAll('.smallnote').forEach(e=>{e.style.fontSize='11px';e.style.color='#888';});
-  src.querySelectorAll('textarea, input, .scan-box').forEach(e=>{
+  src.querySelectorAll('textarea, input[type="text"], input[type="number"], .scan-box').forEach(e=>{
     if(e.value && e.value.trim()) {
-      // Insert a div with the value so Word shows the value, not the input/textarea box
       const val = document.createElement('div');
       val.textContent = e.value;
       val.style.minHeight = "28px";
@@ -329,7 +339,6 @@ document.getElementById('exportWord').addEventListener('click', function() {
       val.style.color = "#333";
       e.replaceWith(val);
     } else if(e.placeholder) {
-      // Show placeholder as grey help text in empty box
       const val = document.createElement('div');
       val.textContent = e.placeholder;
       val.style.fontSize = "11px";
@@ -342,17 +351,24 @@ document.getElementById('exportWord').addEventListener('click', function() {
     }
   });
 
-  // Remove any checkboxes and show "☑" or "☐"
-  src.querySelectorAll('input[type="checkbox"]').forEach(cb=>{
-    const tick = document.createElement('span');
-    tick.textContent = cb.checked ? '☑' : '☐';
-    cb.replaceWith(tick);
+  // Verdict checkboxes as tickboxes
+  ['goVerdict','holdVerdict','killVerdict'].forEach(id=>{
+    const cb = src.querySelector(`#${id}`);
+    if(cb) {
+      const label = cb.parentNode;
+      const checked = cb.checked;
+      const tick = document.createElement('span');
+      tick.textContent = checked ? '☑' : '☐';
+      tick.style.fontSize = "15px";
+      label.insertBefore(tick, cb);
+      label.removeChild(cb);
+    }
   });
 
-  // Ensure no unwanted class names pollute the exported doc
+  // Remove all other class attributes
   src.querySelectorAll('*').forEach(el=>el.removeAttribute('class'));
 
-  // Export to Word as before, but with the new HTML
+  // Export to Word
   const html = `
   <html xmlns:o="urn:schemas-microsoft-com:office:office"
     xmlns:w="urn:schemas-microsoft-com:office:word"
@@ -364,7 +380,6 @@ document.getElementById('exportWord').addEventListener('click', function() {
   </head><body>
   ${src.innerHTML}
   </body></html>`;
-
   const blob = new Blob(['\uFEFF', html], {type: 'application/msword'});
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
@@ -374,6 +389,5 @@ document.getElementById('exportWord').addEventListener('click', function() {
   setTimeout(() => {URL.revokeObjectURL(url); a.remove();}, 0);
 });
 </script>
-
 </body>
 </html>
