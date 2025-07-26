@@ -283,6 +283,22 @@ document.getElementById('exportWord').addEventListener('click', function() {
   // Clone content and post-process to inject all inline styles needed for Word
   const src = document.getElementById('worksheet').cloneNode(true);
 
+ // Replace verdict checkboxes with ticked/unticked boxes
+['goVerdict','holdVerdict','killVerdict'].forEach(id=>{
+  const cb = src.querySelector(`#${id}`);
+  if(cb) {
+    const label = cb.parentNode;
+    const checked = cb.checked;
+    // Remove the checkbox and insert ☑ or ☐
+    const tick = document.createElement('span');
+    tick.textContent = checked ? '☑' : '☐';
+    tick.style.fontSize = "15px";
+    label.insertBefore(tick, cb);
+    label.removeChild(cb);
+  }
+});
+
+
   // Apply heading styles
   src.querySelectorAll('h1').forEach(h => {h.style.color='#ba372a';h.style.fontSize='22px';});
   src.querySelectorAll('h2').forEach(h => {h.style.color='#ba372a';h.style.fontSize='18px';marginTop='22px';});
