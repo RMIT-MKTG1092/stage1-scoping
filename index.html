@@ -4,152 +4,206 @@
 <meta charset="utf-8">
 <title>Stage-1 Scoping Worksheet – LaundryMax</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
+
 <style>
- /* ───── global style ───── */
- body{font-family:Arial,Helvetica,sans-serif;line-height:1.5;margin:40px auto;max-width:960px;color:#222;}
- h1{color:#ba372a;font-size:1.9rem;margin-bottom:.4em;}
+ /* ── global layout ───────────────────────────────────────── */
+ body{font-family:Arial,Helvetica,sans-serif;line-height:1.5;margin:40px auto;
+      max-width:960px;color:#222;}
+ h1{color:#ba372a;font-size:1.9rem;margin-bottom:.45em;}
  h2{color:#ba372a;font-size:1.35rem;margin-top:2.1em;margin-bottom:.55em;}
  h3{color:#000054;font-size:1.05rem;margin-top:1.6em;margin-bottom:.45em;}
+
  table{border-collapse:collapse;width:100%;margin:12px 0;font-size:.93rem;}
  th,td{border:1px solid #ccc;padding:6px 8px;vertical-align:top;}
  th{background:#f0f0f0;}
- textarea,input[type=text],input[type=number]{width:100%;padding:6px;border:1px solid #bbb;border-radius:4px;font-family:inherit;font-size:.92rem;box-sizing:border-box;}
+
+ textarea,input[type=text],input[type=number]{
+   width:100%;padding:6px;border:1px solid #bbb;border-radius:4px;
+   font-family:inherit;font-size:.92rem;box-sizing:border-box;
+ }
  textarea{min-height:64px;}
+ input[type=number]{-moz-appearance:textfield;}
+ input[type=number]::-webkit-outer-spin-button,
+ input[type=number]::-webkit-inner-spin-button{margin:0;-webkit-appearance:none;}
+
  ::placeholder{color:#888;}
  .smallnote{font-size:.83rem;color:#666;}
  .tcentre{text-align:center;}
- .scan-box{width:100%;min-height:64px;padding:6px;border:1px solid #bbb;border-radius:4px;font-size:.92rem;box-sizing:border-box;}
- .scan-score{width:55px;text-align:center;padding:4px;border:1px solid #bbb;border-radius:4px;}
- .scan-instruct{margin:.4em 0 .6em 0;color:#555;font-size:.88rem;}
- .export-btn{display:inline-block;background:#ba372a;color:#fff;border:none;padding:10px 22px;border-radius:4px;font-size:1rem;cursor:pointer;margin-top:22px;}
+
+ .scan-box  {width:100%;min-height:64px;padding:6px;border:1px solid #bbb;
+             border-radius:4px;font-size:.92rem;box-sizing:border-box;}
+ .scan-score{width:55px;text-align:center;padding:4px;border:1px solid #bbb;
+             border-radius:4px;}
+
+ .export-btn{display:inline-block;background:#ba372a;color:#fff;border:none;
+             padding:10px 22px;border-radius:4px;font-size:1rem;cursor:pointer;
+             margin-top:22px;}
  .export-btn:hover{background:#a12e1f;}
 </style>
 </head>
-<body>
 
-<div id="worksheet">
+<body>
+<div id="worksheet"><!-- everything inside exports to Word -->
 
 <h1>Stage-Gate® Stage 1 Worksheet – LaundryMax Co.</h1>
 
-<p><strong>How to use.</strong> Complete each section in order. Grey text inside every box explains the entry.
-When finished, click <strong>“Export to Word”</strong> to save, or use Print → Save as PDF.</p>
+<p><strong>How to use.</strong> Work through each section in order. Grey placeholder text explains
+the entry required. When finished, click <strong>“Export to Word”</strong> to save a copy, or use
+your browser’s Print → PDF.</p>
 
 <hr>
 
-<!-- ───── Concept Snapshot ───── -->
+<!-- ───────── 1  CONCEPT SNAPSHOT ───────── -->
 <h2>Concept Snapshot</h2>
 <table>
  <thead><tr><th style="width:26%">Box</th><th>Prompt / Content</th></tr></thead>
  <tbody>
-  <tr><td><strong>Business description</strong></td><td><textarea placeholder="One-sentence pitch of Smart-refill laundry system."></textarea></td></tr>
-  <tr><td><strong>Core value proposition</strong></td><td><textarea placeholder="What unique benefit does it deliver?"></textarea></td></tr>
-  <tr><td><strong>Target segment</strong></td><td><textarea placeholder="Be specific (e.g. inner-city renters aged 25-40)."></textarea></td></tr>
-  <tr><td><strong>Differentiation</strong></td><td><textarea placeholder="Tech / business-model / CX angle?"></textarea></td></tr>
-  <tr><td><strong>Evidence link</strong></td><td><textarea placeholder="Bullet evidence from PESTLE or consumer data."></textarea></td></tr>
+  <tr><td><strong>Business description</strong></td>
+      <td><textarea placeholder="One-sentence pitch of Smart-refill laundry system."></textarea></td></tr>
+  <tr><td><strong>Core value proposition</strong></td>
+      <td><textarea placeholder="What unique benefit does it deliver?"></textarea></td></tr>
+  <tr><td><strong>Target segment</strong></td>
+      <td><textarea placeholder="Be specific (e.g. inner-city renters aged 25-40)."></textarea></td></tr>
+  <tr><td><strong>Differentiation</strong></td>
+      <td><textarea placeholder="Tech / business-model / experience advantage?"></textarea></td></tr>
+  <tr><td><strong>Evidence link</strong></td>
+      <td><textarea placeholder="Bullet evidence from PESTLE or consumer data."></textarea></td></tr>
  </tbody>
 </table>
 
-<!-- ───── External Scan ───── -->
+<!-- ───────── 2  EXTERNAL SCAN ───────── -->
 <h2>External Scan</h2>
 <p class="smallnote">
-  There is no need to retype your full PESTLE from Week 1. Review your Opportunity Scanner output and paste only the two highest-impact signals you will reference in Gate 2.
+  There is no need to re-type your full PESTLE from Week 1. Review your Opportunity
+  Scanner output and paste only the two highest-impact signals you will reference in Gate 2.
 </p>
 
 <h3>PESTLE (headlines only)</h3>
-<p class="scan-instruct">Enter two to three concise signals in each cell (max 12 words).</p>
+<p class="smallnote">Enter two to three concise signals (max 12 words) in each cell.</p>
 <table>
- <thead><tr><th class="tcentre">P</th><th class="tcentre">E</th><th class="tcentre">S</th><th class="tcentre">T</th><th class="tcentre">L</th><th class="tcentre">E</th></tr></thead>
+ <thead><tr>
+   <th class="tcentre">P</th><th class="tcentre">E</th><th class="tcentre">S</th>
+   <th class="tcentre">T</th><th class="tcentre">L</th><th class="tcentre">E</th>
+ </tr></thead>
  <tbody><!-- three blank rows -->
-  <tr><td><textarea class="scan-box" placeholder="Political signal"></textarea></td><td><textarea class="scan-box" placeholder="Economic signal"></textarea></td><td><textarea class="scan-box" placeholder="Social signal"></textarea></td><td><textarea class="scan-box" placeholder="Technological signal"></textarea></td><td><textarea class="scan-box" placeholder="Legal signal"></textarea></td><td><textarea class="scan-box" placeholder="Environmental signal"></textarea></td></tr>
-  <tr><td><textarea class="scan-box"></textarea></td><td><textarea class="scan-box"></textarea></td><td><textarea class="scan-box"></textarea></td><td><textarea class="scan-box"></textarea></td><td><textarea class="scan-box"></textarea></td><td><textarea class="scan-box"></textarea></td></tr>
-  <tr><td><textarea class="scan-box"></textarea></td><td><textarea class="scan-box"></textarea></td><td><textarea class="scan-box"></textarea></td><td><textarea class="scan-box"></textarea></td><td><textarea class="scan-box"></textarea></td><td><textarea class="scan-box"></textarea></td></tr>
+  <tr><td><textarea class="scan-box" placeholder="Political signal"></textarea></td>
+      <td><textarea class="scan-box" placeholder="Economic signal"></textarea></td>
+      <td><textarea class="scan-box" placeholder="Social signal"></textarea></td>
+      <td><textarea class="scan-box" placeholder="Technological signal"></textarea></td>
+      <td><textarea class="scan-box" placeholder="Legal signal"></textarea></td>
+      <td><textarea class="scan-box" placeholder="Environmental signal"></textarea></td></tr>
+  <tr><td><textarea class="scan-box"></textarea></td><td><textarea class="scan-box"></textarea></td>
+      <td><textarea class="scan-box"></textarea></td><td><textarea class="scan-box"></textarea></td>
+      <td><textarea class="scan-box"></textarea></td><td><textarea class="scan-box"></textarea></td></tr>
+  <tr><td><textarea class="scan-box"></textarea></td><td><textarea class="scan-box"></textarea></td>
+      <td><textarea class="scan-box"></textarea></td><td><textarea class="scan-box"></textarea></td>
+      <td><textarea class="scan-box"></textarea></td><td><textarea class="scan-box"></textarea></td></tr>
  </tbody>
 </table>
 
 <h3>Five Forces (score 1–5)</h3>
-<p class="scan-instruct">Score each force (1 = low, 5 = high) and justify with one sentence of data or logic.</p>
+<p class="smallnote">
+  Score each force from 1 (low) to 5 (high) and justify with one sentence of evidence or logic.
+</p>
 <table>
  <thead><tr><th style="width:34%">Force</th><th style="width:10%">Score</th><th>Supporting note</th></tr></thead>
  <tbody>
-  <tr><td>Threat of new entrants</td><td class="tcentre"><input type="number" min="1" max="5" step="1" class="scan-score"></td><td><textarea class="scan-box" placeholder="Barrier level, capital, brand etc."></textarea></td></tr>
-  <tr><td>Supplier power</td><td class="tcentre"><input type="number" min="1" max="5" step="1" class="scan-score"></td><td><textarea class="scan-box" placeholder="Concentration, switching cost"></textarea></td></tr>
-  <tr><td>Buyer power</td><td class="tcentre"><input type="number" min="1" max="5" step="1" class="scan-score"></td><td><textarea class="scan-box" placeholder="Price sensitivity, alternatives"></textarea></td></tr>
-  <tr><td>Threat of substitutes</td><td class="tcentre"><input type="number" min="1" max="5" step="1" class="scan-score"></td><td><textarea class="scan-box" placeholder="Alternative tech / DIY"></textarea></td></tr>
-  <tr><td>Competitive rivalry</td><td class="tcentre"><input type="number" min="1" max="5" step="1" class="scan-score"></td><td><textarea class="scan-box" placeholder="Competitor count, growth rate"></textarea></td></tr>
+  <tr><td>Threat of new entrants</td>
+      <td class="tcentre"><input type="number" min="1" max="5" class="scan-score"></td>
+      <td><textarea class="scan-box" placeholder="Barrier level, capital, brand etc."></textarea></td></tr>
+  <tr><td>Supplier power</td>
+      <td class="tcentre"><input type="number" min="1" max="5" class="scan-score"></td>
+      <td><textarea class="scan-box" placeholder="Concentration, switching cost"></textarea></td></tr>
+  <tr><td>Buyer power</td>
+      <td class="tcentre"><input type="number" min="1" max="5" class="scan-score"></td>
+      <td><textarea class="scan-box" placeholder="Price sensitivity, alternatives"></textarea></td></tr>
+  <tr><td>Threat of substitutes</td>
+      <td class="tcentre"><input type="number" min="1" max="5" class="scan-score"></td>
+      <td><textarea class="scan-box" placeholder="Alternative tech / DIY"></textarea></td></tr>
+  <tr><td>Competitive rivalry</td>
+      <td class="tcentre"><input type="number" min="1" max="5" class="scan-score"></td>
+      <td><textarea class="scan-box" placeholder="Competitor count, growth rate"></textarea></td></tr>
  </tbody>
 </table>
 
-<!-- ───── Rough-Cut Numbers ───── -->
+<!-- ───────── 3  ROUGH-CUT NUMBERS ───────── -->
 <h2>Rough-Cut Numbers</h2>
-<p>TAM (Total Addressable Market), SAM (Serviceable Addressable Market) and SOM (Serviceable Obtainable Market) convert evidence into realistic opportunity size. Use public sources such as <strong>Euromonitor Passport</strong> or IBISWorld. Show your workings if figures are estimates.</p>
+
+<p>TAM – Total Addressable Market: size of the entire market demand.</p>
+<p>SAM – Serviceable Addressable Market: portion our business could realistically serve.</p>
+<p>SOM – Serviceable Obtainable Market: share we aim to capture in the first 3 years.</p>
+<p class="smallnote">Use public sources such as <strong>Euromonitor Passport</strong> or IBISWorld and cite them below.</p>
 
 <table>
- <thead><tr><th>Metric</th><th style="width:22%">Figure</th><th>Source / working</th></tr></thead>
+ <thead><tr>
+   <th>Metric</th>
+   <th style="width:24%">Figure<br><span class="smallnote">(add commas)</span></th>
+   <th>Source / Justification</th>
+ </tr></thead>
  <tbody>
-  <tr><td><strong>TAM</strong><br><span class="smallnote">Total global demand</span></td>
-      <td><input id="tamValue" type="number" placeholder="e.g. 500000000"></td>
-      <td><textarea class="scan-box" placeholder="e.g. Euromonitor Laundry Care global revenue 2024"></textarea></td></tr>
-
-  <tr><td><strong>SAM</strong><br><span class="smallnote">Segment we can serve</span></td>
-      <td>
-        <input id="samPercent" type="number" placeholder="% of TAM"> %
-        <input id="samValue" type="number" placeholder="Auto" readonly>
-      </td>
-      <td><textarea class="scan-box" placeholder="City households × avg spend"></textarea></td></tr>
-
-  <tr><td><strong>SOM</strong><br><span class="smallnote">Realistic 3-yr share</span></td>
-      <td>
-        <input id="somPercent" type="number" placeholder="% of SAM"> %
-        <input id="somValue" type="number" placeholder="Auto" readonly>
-      </td>
-      <td><textarea class="scan-box" placeholder="Market-share assumption rationale"></textarea></td></tr>
-
-  <tr><td><strong>CAC</strong><br><span class="smallnote">Customer acquisition cost</span></td>
-      <td>
-        Spend $<input id="cacSpend" type="number" style="width:90px;">
-        ÷ Customers <input id="cacCust" type="number" style="width:80px;">
-        = <input id="cacValue" type="number" placeholder="Auto" readonly>
-      </td>
-      <td><textarea class="scan-box" placeholder="Digital ads budget ÷ conversions"></textarea></td></tr>
-
-  <tr><td><strong>CLV</strong><br><span class="smallnote">Customer lifetime value</span></td>
-      <td>
-        ARPY $<input id="clvRev" type="number" style="width:90px;">
-        × Years <input id="clvYears" type="number" style="width:60px;">
-        − CAC = <input id="clvValue" type="number" placeholder="Auto" readonly>
-      </td>
-      <td><textarea class="scan-box" placeholder="Avg revenue per year × retention"></textarea></td></tr>
+  <tr>
+    <td><strong>TAM</strong><br><span class="smallnote">Total market size (A$ or units)</span></td>
+    <td><input id="tamValue" type="text" placeholder="$ 2,000,000,000"></td>
+    <td><textarea class="scan-box" placeholder="Euromonitor Laundry Care: AU$ value 2024"></textarea></td>
+  </tr>
+  <tr>
+    <td><strong>SAM</strong><br><span class="smallnote">% of TAM our model can reach</span></td>
+    <td>
+      <input id="samPercent" type="number" class="scan-score" placeholder="15"> %
+      <br><input id="samValue" type="text" placeholder="Auto" readonly>
+    </td>
+    <td><textarea class="scan-box" placeholder="Metro households × avg spend"></textarea></td>
+  </tr>
+  <tr>
+    <td><strong>SOM</strong><br><span class="smallnote">% of SAM we aim to capture</span></td>
+    <td>
+      <input id="somPercent" type="number" class="scan-score" placeholder="3"> %
+      <br><input id="somValue" type="text" placeholder="Auto" readonly>
+    </td>
+    <td><textarea class="scan-box" placeholder="Market-share assumption rationale"></textarea></td>
+  </tr>
+  <tr>
+    <td><strong>CAC</strong><br><span class="smallnote">Customer Acquisition Cost (A$)</span></td>
+    <td><input id="cacValue" type="text" placeholder="$ 40"></td>
+    <td><textarea class="scan-box" placeholder="Digital ad spend ÷ conversions"></textarea></td>
+  </tr>
+  <tr>
+    <td><strong>CLV</strong><br><span class="smallnote">Customer Lifetime Value (A$ gross margin)</span></td>
+    <td><input id="clvValue" type="text" placeholder="$ 280"></td>
+    <td><textarea class="scan-box" placeholder="Avg revenue × years – CAC"></textarea></td>
+  </tr>
  </tbody>
 </table>
 
-<!-- ───── Gate Decision ───── -->
+<!-- ───────── 4  GATE DECISION ───────── -->
 <h2>Gate Decision</h2>
 
 <h3>Should-meet scorecard</h3>
 <table>
- <thead><tr><th style="width:40%">Criterion (score 1–5)</th><th style="width:10%">Score</th><th>Reason / Evidence</th></tr></thead>
+ <thead><tr>
+   <th style="width:40%">Criterion (score 1–5)</th>
+   <th style="width:10%">Score</th>
+   <th>Reason / Evidence</th>
+ </tr></thead>
  <tbody>
   <tr><td>Competitive advantage potential</td>
-      <td><input type="number" min="1" max="5" step="1" class="scan-score"></td>
+      <td><input type="number" min="1" max="5" class="scan-score"></td>
       <td><textarea class="scan-box"></textarea></td></tr>
-
   <tr><td>Leverages key capabilities or creates synergy</td>
-      <td><input type="number" min="1" max="5" step="1" class="scan-score"></td>
-      <td><textarea class="scan-box"></textarea></td></tr>
-
+      <td><input type="number" min="1" max="5" class="scan-score"></td>
+      <td><textarea class="scan-box=""></textarea></td></tr>
   <tr><td>Market size and growth justify next stage</td>
-      <td><input type="number" min="1" max="5" step="1" class="scan-score"></td>
+      <td><input type="number" min="1" max="5" class="scan-score"></td>
       <td><textarea class="scan-box"></textarea></td></tr>
-
   <tr><td>Regulatory / environmental fit (no show-stoppers)</td>
-      <td><input type="number" min="1" max="5" step="1" class="scan-score"></td>
+      <td><input type="number" min="1" max="5" class="scan-score"></td>
       <td><textarea class="scan-box"></textarea></td></tr>
  </tbody>
 </table>
 
 <p style="max-width:320px;">
   <label><strong>Average “should-meet” score</strong>
-  <input id="avgScore" type="number" step="0.1" min="1" max="5" placeholder="e.g. 3.7" class="scan-score" style="width:90px;"></label>
+  <input id="avgScore" type="number" step="0.1" min="1" max="5" class="scan-score" style="width:90px;" placeholder="e.g. 3.7"></label>
 </p>
 
 <h3 class="tcentre">Verdict</h3>
@@ -162,7 +216,7 @@ When finished, click <strong>“Export to Word”</strong> to save, or use Print
 </table>
 
 <p><textarea placeholder="Explain your decision (up to 200 words)." style="min-height:120px;"></textarea></p>
-<p class="smallnote tcentre">Click Export to Word or Print → PDF before leaving the page.</p>
+<p class="smallnote tcentre">Remember to click Export to Word or Print → PDF before leaving this page.</p>
 
 <!-- Export button -->
 <button class="export-btn" id="exportWord">Export to Word</button>
@@ -170,39 +224,49 @@ When finished, click <strong>“Export to Word”</strong> to save, or use Print
 </div><!-- /worksheet -->
 
 <script>
-/* ── auto-calc SAM, SOM, CAC, CLV ── */
-function calcNumbers(){
- const tam=+document.getElementById('tamValue').value||0;
- const samPct=+document.getElementById('samPercent').value||0;
- document.getElementById('samValue').value = tam*samPct/100||'';
- const sam=document.getElementById('samValue').value;
- const somPct=+document.getElementById('somPercent').value||0;
- document.getElementById('somValue').value = sam*somPct/100||'';
-
- const spend=+document.getElementById('cacSpend').value||0;
- const cust=+document.getElementById('cacCust').value||0;
- document.getElementById('cacValue').value = cust? (spend/cust).toFixed(2):'';
-
- const arpu=+document.getElementById('clvRev').value||0;
- const years=+document.getElementById('clvYears').value||0;
- const cac=+document.getElementById('cacValue').value||0;
- document.getElementById('clvValue').value = arpu*years-cac||'';
+/* ── helper: add comma formatting ─────────────────────────── */
+function addCommas(el){
+  const raw=el.value.replace(/[^0-9.]/g,'');
+  if(!raw){el.value='';return;}
+  const parts=raw.split('.');
+  parts[0]=parts[0].replace(/\B(?=(\d{3})+(?!\d))/g,',');
+  el.value=(el.value.trim().charAt(0)==='$'?'$ ':'')+parts.join('.');
 }
-document.querySelectorAll('#samPercent,#tamValue,#somPercent,#cacSpend,#cacCust,#clvRev,#clvYears')
-        .forEach(el=>el.addEventListener('input',calcNumbers));
+['tamValue','samValue','somValue','cacValue','clvValue']
+  .forEach(id=>document.getElementById(id).addEventListener('blur',e=>addCommas(e.target)));
 
-/* ── Export to Word (Arial) ── */
+/* ── auto-calc SAM & SOM ─────────────────────────────────── */
+function calcSAM(){
+  const tam=parseFloat(document.getElementById('tamValue').value.replace(/[^0-9.]/g,''))||0;
+  const pct=parseFloat(document.getElementById('samPercent').value)||0;
+  if(tam&&pct){
+    document.getElementById('samValue').value=Math.round(tam*pct/100).toLocaleString();
+  }else{document.getElementById('samValue').value='';}
+}
+function calcSOM(){
+  const sam=parseFloat(document.getElementById('samValue').value.replace(/[^0-9.]/g,''))||0;
+  const pct=parseFloat(document.getElementById('somPercent').value)||0;
+  if(sam&&pct){
+    document.getElementById('somValue').value=Math.round(sam*pct/100).toLocaleString();
+  }else{document.getElementById('somValue').value='';}
+}
+document.getElementById('tamValue').addEventListener('blur',calcSAM);
+document.getElementById('samPercent').addEventListener('input',calcSAM);
+document.getElementById('samPercent').addEventListener('blur',calcSOM);
+document.getElementById('somPercent').addEventListener('input',calcSOM);
+
+/* ── Export to Word (Arial) ───────────────────────────────── */
 document.getElementById('exportWord').addEventListener('click',()=>{
-  const content=document.getElementById('worksheet').innerHTML;
-  const doc=`<html xmlns:o="urn:schemas-microsoft-com:office:office"
-      xmlns:w="urn:schemas-microsoft-com:office:word"
-      xmlns="http://www.w3.org/TR/REC-html40"><head><meta charset="utf-8">
-      <title>Stage-1 Worksheet</title>
-      <style>body{font-family:Arial,Helvetica,sans-serif;}</style></head><body>${content}</body></html>`;
-  const blob=new Blob(['\uFEFF',doc],{type:'application/msword'});
+  const html=`<html xmlns:o="urn:schemas-microsoft-com:office:office"
+    xmlns:w="urn:schemas-microsoft-com:office:word"
+    xmlns="http://www.w3.org/TR/REC-html40"><head><meta charset="utf-8">
+    <style>body{font-family:Arial,Helvetica,sans-serif;}</style></head><body>`
+    +document.getElementById('worksheet').innerHTML+'</body></html>';
+  const blob=new Blob(['\uFEFF',html],{type:'application/msword'});
   const url=URL.createObjectURL(blob);
   const a=document.createElement('a');a.href=url;a.download='Stage1-Worksheet.doc';
-  document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(url);a.remove();},0);
+  document.body.appendChild(a);a.click();
+  setTimeout(()=>{URL.revokeObjectURL(url);a.remove();},0);
 });
 </script>
 
