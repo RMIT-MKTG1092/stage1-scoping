@@ -1,91 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Stage-1 Scoping Worksheet – LaundryMax</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+ /* ───── global page style ───── */
+ body{font-family:Arial,Helvetica,sans-serif;line-height:1.5;margin:40px auto;
+      max-width:960px;color:#222;}
+ h1{color:#ba372a;font-size:1.9rem;margin-bottom:.4em;}
+ h2{color:#ba372a;font-size:1.35rem;margin-top:2.2em;margin-bottom:.6em;}
+ h3{color:#ba372a;font-size:1.1rem;margin-top:1.6em;margin-bottom:.4em;}
+ table{border-collapse:collapse;width:100%;margin:12px 0;font-size:.93rem;}
+ th,td{border:1px solid #ccc;padding:6px 8px;vertical-align:top;}
+ th{background:#f0f0f0;}
+ textarea,input[type=text]{width:100%;padding:6px;border:1px solid #bbb;border-radius:4px;
+                           font-family:inherit;font-size:.92rem;box-sizing:border-box;}
+ textarea{min-height:66px;}
+ ::placeholder{color:#888;}                 /* mid-grey prompt text */
+ .smallnote{font-size:.83rem;color:#666;}
+ .tcentre{text-align:center;}
+
+ /* ───── external-scan specific ───── */
+ .scan-box  {width:100%;min-height:66px;padding:6px;border:1px solid #bbb;
+             border-radius:4px;font-family:inherit;font-size:.92rem;box-sizing:border-box;}
+ .scan-score{width:55px;text-align:center;padding:4px;border:1px solid #bbb;
+             border-radius:4px;font-family:inherit;}
+ .scan-instruct{margin:.4em 0 .6em 0;color:#555;font-size:.85rem;}
+
+ /* ───── export button ───── */
+ .export-btn{
+   display:inline-block;background:#ba372a;color:#fff;border:none;
+   padding:10px 22px;border-radius:4px;font-size:1rem;cursor:pointer;margin-top:22px;
+ }
+ .export-btn:hover{background:#a12e1f;}
+</style>
+</head>
+<body>
+
+<div id="worksheet"><!-- start wrapper for Word export -->
+
+<h1>Stage-Gate® Stage 1 Worksheet – LaundryMax Co.</h1>
+
+<p><strong>How to use</strong></p>
+<ol>
+  <li>Work through the sections top → bottom.</li>
+  <li>Each box has a prompt in light grey.</li>
+  <li>When finished, choose <em>Print → Save as PDF</em> <strong>or</strong> use the Export to Word button.</li>
+</ol>
+
+<hr>
+
+<!-- ───────── ① CONCEPT SNAPSHOT ───────── -->
+<h2>① Concept Snapshot</h2>
+<table>
+ <thead><tr><th style="width:26%">Box</th><th>Prompt / Content</th></tr></thead>
+ <tbody>
+  <tr><td><strong>Business description</strong></td>
+      <td><textarea placeholder="One-sentence pitch of Smart-refill laundry system."></textarea></td></tr>
+  <tr><td><strong>Core value proposition</strong></td>
+      <td><textarea placeholder="What unique benefit does it deliver?"></textarea></td></tr>
+  <tr><td><strong>Target segment</strong></td>
+      <td><textarea placeholder="Be specific (e.g. inner-city renters aged 25-40)."></textarea></td></tr>
+  <tr><td><strong>Differentiation</strong></td>
+      <td><textarea placeholder="Tech / business-model / CX angle?"></textarea></td></tr>
+  <tr><td><strong>Evidence link</strong></td>
+      <td><textarea placeholder="Bullet evidence from PESTLE or consumer data."></textarea></td></tr>
+ </tbody>
+</table>
+
 <!-- ───────── ② EXTERNAL SCAN ───────── -->
 <h2>② External Scan</h2>
 <p class="smallnote">
-  <strong>Note:</strong> no need to re-type your full PESTLE from Week&nbsp;1.
+  <strong>Note:</strong> no need to re-type your full PESTLE from Week 1.  
   Review your <em>PESTLE Opportunity Scanner</em> output and paste only the
-  <strong>two highest-impact signals</strong> you’ll reference in Gate&nbsp;2.
+  <strong>two highest-impact signals</strong> you’ll reference in Gate 2.
 </p>
-
-<style>
-  /* uniform boxes for this section only */
-  .scan-box       {width:100%;min-height:66px;padding:6px;box-sizing:border-box;
-                   border:1px solid #bbb;border-radius:4px;font-family:inherit;
-                   font-size:.92rem;}
-  .scan-score     {width:55px;text-align:center;}
-  .scan-instruct  {margin:.4em 0 .6em 0;color:#555;font-size:.85rem;}
-  td.tcentre      {text-align:center;}
-</style>
 
 <h3>PESTLE (headlines only)</h3>
 <p class="scan-instruct">
   • Keep each cell to <strong>one clear signal</strong> (max 12 words).  
-  • Grey examples disappear as you type.
+  • Grey examples disappear when you type.
 </p>
 <table>
-  <thead>
-    <tr><th class="tcentre">P</th><th class="tcentre">E</th><th class="tcentre">S</th>
-        <th class="tcentre">T</th><th class="tcentre">L</th><th class="tcentre">E</th></tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><textarea class="scan-box" placeholder="Key political shift"></textarea></td>
-      <td><textarea class="scan-box" placeholder="Economic pressure"></textarea></td>
-      <td><textarea class="scan-box" placeholder="Social trend"></textarea></td>
-      <td><textarea class="scan-box" placeholder="Tech change"></textarea></td>
-      <td><textarea class="scan-box" placeholder="Legal / compliance"></textarea></td>
-      <td><textarea class="scan-box" placeholder="Environmental factor"></textarea></td>
-    </tr>
-  </tbody>
+ <thead>
+  <tr><th class="tcentre">P</th><th class="tcentre">E</th><th class="tcentre">S</th>
+      <th class="tcentre">T</th><th class="tcentre">L</th><th class="tcentre">E</th></tr>
+ </thead>
+ <tbody>
+  <tr>
+    <td><textarea class="scan-box" placeholder="Key political shift"></textarea></td>
+    <td><textarea class="scan-box" placeholder="Economic pressure"></textarea></td>
+    <td><textarea class="scan-box" placeholder="Social trend"></textarea></td>
+    <td><textarea class="scan-box" placeholder="Tech change"></textarea></td>
+    <td><textarea class="scan-box" placeholder="Legal / compliance"></textarea></td>
+    <td><textarea class="scan-box" placeholder="Environmental factor"></textarea></td>
+  </tr>
+ </tbody>
 </table>
 
-<h3>Five Forces (score 1-5)</h3>
+<h3>Five Forces (score 1–5)</h3>
 <p class="scan-instruct">
-  • Give a <strong>1&nbsp;(low)&nbsp;to&nbsp;5&nbsp;(high)</strong> score, then jot a
-  one-sentence reason or data point.<br>
-  • Example scoring guide: 5 = very strong force / serious barrier.
+  • Give a <strong>1 (low) to 5 (high)</strong> score, then jot one sentence of evidence.  
+  • 5 = very strong force / serious barrier.
 </p>
 <table>
-  <thead>
-    <tr><th style="width:36%">Force</th><th style="width:10%">Score</th><th>Supporting note</th></tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Threat of new entrants</td>
+ <thead><tr><th style="width:36%">Force</th><th style="width:10%">Score</th><th>Supporting note</th></tr></thead>
+ <tbody>
+  <tr><td>Threat of new entrants</td>
       <td class="tcentre"><input type="number" min="1" max="5" step="1" class="scan-score"></td>
-      <td><textarea class="scan-box" placeholder="Barrier level, capital, brand etc."></textarea></td>
-    </tr>
-    <tr>
-      <td>Supplier power</td>
+      <td><textarea class="scan-box" placeholder="Barrier level, capital, brand etc."></textarea></td></tr>
+  <tr><td>Supplier power</td>
       <td class="tcentre"><input type="number" min="1" max="5" step="1" class="scan-score"></td>
-      <td><textarea class="scan-box"></textarea></td>
-    </tr>
-    <tr>
-      <td>Buyer power</td>
+      <td><textarea class="scan-box"></textarea></td></tr>
+  <tr><td>Buyer power</td>
       <td class="tcentre"><input type="number" min="1" max="5" step="1" class="scan-score"></td>
-      <td><textarea class="scan-box"></textarea></td>
-    </tr>
-    <tr>
-      <td>Threat of substitutes</td>
+      <td><textarea class="scan-box"></textarea></td></tr>
+  <tr><td>Threat of substitutes</td>
       <td class="tcentre"><input type="number" min="1" max="5" step="1" class="scan-score"></td>
-      <td><textarea class="scan-box"></textarea></td>
-    </tr>
-    <tr>
-      <td>Competitive rivalry</td>
+      <td><textarea class="scan-box"></textarea></td></tr>
+  <tr><td>Competitive rivalry</td>
       <td class="tcentre"><input type="number" min="1" max="5" step="1" class="scan-score"></td>
-      <td><textarea class="scan-box"></textarea></td>
-    </tr>
-  </tbody>
+      <td><textarea class="scan-box"></textarea></td></tr>
+ </tbody>
 </table>
-<!-- ───────── ③ ROUGH-CUT NUMBERS ───────── -->
 
+<!-- ───────── ③ ROUGH-CUT NUMBERS ───────── -->
 <h2>③ Rough-Cut Numbers</h2>
-<p><strong>Quick guide:</strong> Use publicly available data (Statista, IBISWorld, ABS).  
+<p><strong>Quick guide:</strong> use publicly available data (Statista, IBISWorld, ABS).  
 If you cannot find an exact figure, show your working and cite the source.</p>
 <ul>
   <li><strong>TAM</strong> – total global market if you owned 100 % share.</li>
   <li><strong>SAM</strong> – portion you can actually serve (e.g. AU metro households).</li>
   <li><strong>SOM</strong> – realistic 3-year share (e.g. 2 % of SAM).</li>
-  <li><strong>CAC</strong> – cost to gain one new customer (desktop search ads estimate).</li>
+  <li><strong>CAC</strong> – cost to acquire one new customer (desktop search ads estimate).</li>
   <li><strong>CLV</strong> – lifetime gross margin from one customer.</li>
 </ul>
 
@@ -105,21 +153,21 @@ If you cannot find an exact figure, show your working and cite the source.</p>
 
 <h3>Should-meet scorecard</h3>
 <table>
- <thead><tr><th>Criterion (score 1-5)</th><th style="width:12%">Score</th></tr></thead>
+ <thead><tr><th>Criterion (score 1–5)</th><th style="width:12%">Score</th></tr></thead>
  <tbody>
-  <tr><td>Competitive advantage potential</td><td><input type="number" min="1" max="5" step="1"></td></tr>
-  <tr><td>Leverages key capabilities / creates synergy</td><td><input type="number" min="1" max="5" step="1"></td></tr>
-  <tr><td>Market size &amp; growth justify next stage</td><td><input type="number" min="1" max="5" step="1"></td></tr>
-  <tr><td>Regulatory / environmental fit</td><td><input type="number" min="1" max="5" step="1"></td></tr>
+  <tr><td>Competitive advantage potential</td><td><input type="number" min="1" max="5" step="1" class="scan-score"></td></tr>
+  <tr><td>Leverages key capabilities / creates synergy</td><td><input type="number" min="1" max="5" step="1" class="scan-score"></td></tr>
+  <tr><td>Market size &amp; growth justify next stage</td><td><input type="number" min="1" max="5" step="1" class="scan-score"></td></tr>
+  <tr><td>Regulatory / environmental fit</td><td><input type="number" min="1" max="5" step="1" class="scan-score"></td></tr>
  </tbody>
 </table>
 
 <p style="max-width:300px;">
-  <label><strong>Average “should-meet” score</strong>  
-  <input type="number" step="0.1" min="1" max="5" placeholder="e.g. 3.7"></label>
+  <label><strong>Average “should-meet” score</strong>
+  <input type="number" step="0.1" min="1" max="5" placeholder="e.g. 3.7" class="scan-score" style="width:90px;"></label>
 </p>
 
-<h3 class="centre">Verdict</h3>
+<h3 class="tcentre">Verdict</h3>
 <table style="width:70%;margin:auto;">
  <tbody>
   <tr><td><label><input type="checkbox"> <span style="color:#027634;font-weight:600;">Go</span> — evidence strong</label></td></tr>
@@ -129,10 +177,30 @@ If you cannot find an exact figure, show your working and cite the source.</p>
 </table>
 
 <p><textarea placeholder="Explain your decision (≤ 50 words)."></textarea></p>
+<p class="smallnote tcentre">Print → PDF or use the button below, then upload.</p>
 
-<p class="smallnote centre">Print → PDF and upload.</p>
+<!-- ---------- Export to Word button + script ---------- -->
+<button class="export-btn" id="exportWord">Export to Word</button>
 
-<p class="smallnote" style="text-align:center;margin-top:40px;">© 2025 RMIT | MKTG1092 – tutorial use only</p>
+</div><!-- end #worksheet -->
+
+<script>
+/* simple HTML→Word download */
+document.getElementById('exportWord').addEventListener('click',function(){
+  const content=document.getElementById('worksheet').innerHTML;
+  const header=`<html xmlns:o='urn:schemas-microsoft-com:office:office'
+    xmlns:w='urn:schemas-microsoft-com:office:word'
+    xmlns='http://www.w3.org/TR/REC-html40'><head><meta charset='utf-8'>
+    <title>Stage-1 Worksheet</title></head><body>`;
+  const source=header+content+'</body></html>';
+  const blob=new Blob(['\uFEFF',source],{type:'application/msword'});
+  const url=URL.createObjectURL(blob);
+  const link=document.createElement('a');
+  link.href=url;link.download='Stage1-Worksheet.doc';
+  document.body.appendChild(link);link.click();
+  setTimeout(()=>{document.body.removeChild(link);URL.revokeObjectURL(url);},0);
+});
+</script>
 
 </body>
 </html>
