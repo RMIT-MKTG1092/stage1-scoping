@@ -279,59 +279,85 @@
 </div><!-- /worksheet -->
 
 <script>
-/* ── comma-format helper ── */
-function fmtComma(el){
- const raw=el.value.replace(/[^0-9.]/g,'');
- if(!raw){el.value='';return;}
- const p=raw.split('.');p[0]=p[0].replace(/\B(?=(\d{3})+(?!\d))/g,',');
- el.value=(el.value.trim().charAt(0)==='$'?'$ ':'')+p.join('.');
-}
-['tamValue','samValue','somValue','cacValue','clvValue','npvValue','devCost']
- .forEach(id=>{const e=document.getElementById(id); if(e){e.addEventListener('blur',e=>fmtComma(e.target));}});
+document.getElementById('exportWord').addEventListener('click', function() {
+  // Clone content and post-process to inject all inline styles needed for Word
+  const src = document.getElementById('worksheet').cloneNode(true);
 
-/* ── SAM & SOM auto-calc ── */
-function calcSAM(){const t=+tamValue.value.replace(/[^0-9.]/g,'')||0;
- const p=+samPercent.value||0;
- samValue.value=t&&p? (t*p/100).toLocaleString():'';}
-function calcSOM(){const s=+samValue.value.replace(/[^0-9.]/g,'')||0;
- const p=+somPercent.value||0;
- somValue.value=s&&p? (s*p/100).toLocaleString():'';}
-if(window.tamValue){
- tamValue.addEventListener('blur',calcSAM);samPercent.addEventListener('input',calcSAM);
- samPercent.addEventListener('blur',calcSOM);somPercent.addEventListener('input',calcSOM);
-}
+  // Apply heading styles
+  src.querySelectorAll('h1').forEach(h => {h.style.color='#ba372a';h.style.fontSize='22px';});
+  src.querySelectorAll('h2').forEach(h => {h.style.color='#ba372a';h.style.fontSize='18px';marginTop='22px';});
+  src.querySelectorAll('h3').forEach(h => {h.style.color='#000054';h.style.fontSize='15px';marginTop='14px';});
 
-/* ── Five-Forces averages ── */
-const map={new:'force_new',sup:'force_sup',buy:'force_buy',sub:'force_sub',riv:'force_riv'};
-function updForces(){
- Object.keys(map).forEach(k=>{
-  const vals=[...document.querySelectorAll(`input.var-score[data-force=${k}]`)]
-             .map(i=>+i.value||0).filter(v=>v);
-  document.getElementById(map[k]).value=vals.length?(vals.reduce((a,b)=>a+b)/vals.length).toFixed(2):'';
- });
-}
-document.querySelectorAll('input.var-score').forEach(i=>i.addEventListener('input',updForces));
+  // Style all tables & cells for fine border/padding
+  src.querySelectorAll('table').forEach(tb=>{
+    tb.style.borderCollapse='collapse';tb.style.width='100%';
+    tb.style.margin='14px 0';
+    tb.querySelectorAll('th,td').forEach(cell=>{
+      cell.style.border='1px solid #bcbcbc';
+      cell.style.padding='8px';
+      cell.style.fontSize='12px';
+      cell.style.verticalAlign='top';
+    });
+    tb.querySelectorAll('th').forEach(cell=>{cell.style.background='#f0f0f0';cell.style.fontWeight='bold';});
+  });
 
-/* ── auto-average should-meet ── */
-function avgSM(){
- const vals=[...document.querySelectorAll('.sm-score')].map(i=>+i.value||0).filter(v=>v);
- avgScore.value=vals.length?(vals.reduce((a,b)=>a+b)/vals.length).toFixed(2):'';
-}
-document.querySelectorAll('.sm-score').forEach(i=>i.addEventListener('input',avgSM));
+  // Style labels, smallnote, and placeholders (since placeholder attr is not visible in Word)
+  src.querySelectorAll('.smallnote').forEach(e=>{e.style.fontSize='11px';e.style.color='#888';});
+  src.querySelectorAll('textarea, input, .scan-box').forEach(e=>{
+    if(e.value && e.value.trim()) {
+      // Insert a div with the value so Word shows the value, not the input/textarea box
+      const val = document.createElement('div');
+      val.textContent = e.value;
+      val.style.minHeight = "28px";
+      val.style.fontSize = "12px";
+      val.style.color = "#333";
+      e.replaceWith(val);
+    } else if(e.placeholder) {
+      // Show placeholder as grey help text in empty box
+      const val = document.createElement('div');
+      val.textContent = e.placeholder;
+      val.style.fontSize = "11px";
+      val.style.color = "#aaa";
+      val.style.fontStyle = "italic";
+      val.style.minHeight = "22px";
+      e.replaceWith(val);
+    } else {
+      e.replaceWith(document.createElement('div'));
+    }
+  });
 
-/* ── Word export ── */
-exportWord.addEventListener('click',()=>{
- const html=`<html xmlns:o="urn:schemas-microsoft-com:office:office"
-  xmlns:w="urn:schemas-microsoft-com:office:word"
-  xmlns="http://www.w3.org/TR/REC-html40"><head><meta charset="utf-8">
-  <style>body{font-family:Arial,Helvetica,sans-serif;}</style></head><body>`
-  +document.getElementById('worksheet').innerHTML+'</body></html>';
- const blob=new Blob(['\uFEFF',html],{type:'application/msword'});
- const url=URL.createObjectURL(blob);
- const a=document.createElement('a');a.href=url;a.download='Stage1-Worksheet.doc';
- document.body.appendChild(a);a.click();
- setTimeout(()=>{URL.revokeObjectURL(url);a.remove();},0);
+  // Remove any checkboxes and show "☑" or "☐"
+  src.querySelectorAll('input[type="checkbox"]').forEach(cb=>{
+    const tick = document.createElement('span');
+    tick.textContent = cb.checked ? '☑' : '☐';
+    cb.replaceWith(tick);
+  });
+
+  // Ensure no unwanted class names pollute the exported doc
+  src.querySelectorAll('*').forEach(el=>el.removeAttribute('class'));
+
+  // Export to Word as before, but with the new HTML
+  const html = `
+  <html xmlns:o="urn:schemas-microsoft-com:office:office"
+    xmlns:w="urn:schemas-microsoft-com:office:word"
+    xmlns="http://www.w3.org/TR/REC-html40"><head>
+  <meta charset="utf-8">
+  <style>
+    body { font-family: Arial,Helvetica,sans-serif; }
+  </style>
+  </head><body>
+  ${src.innerHTML}
+  </body></html>`;
+
+  const blob = new Blob(['\uFEFF', html], {type: 'application/msword'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'Stage1-Worksheet.doc';
+  document.body.appendChild(a); a.click();
+  setTimeout(() => {URL.revokeObjectURL(url); a.remove();}, 0);
 });
 </script>
+
 </body>
 </html>
